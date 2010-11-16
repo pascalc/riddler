@@ -18,10 +18,15 @@ possible time.
 # The Answer #
 
 A and B cross, running cost = 2
+
 B crosses, running cost = 4
+
 C and D cross, running cost = 14
+
 A crosses, running cost = 15
+
 A and B cross, running cost = 17
+
 Succeeded after 63 node expansions.
 
 # Algorithm Performance #
