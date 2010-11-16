@@ -34,23 +34,23 @@ Succeeded after 63 node expansions.
 ## A\* search ##
 
 For A\* search we have a variety of heuristics to choose from:
-	* Number of people on the left bank: 1794 node expansions.
-	* Average travel time for people on the left bank: 526 node expansions.
-	* Maximum travel time for people on the left bank: 63 node expansions.
++ Number of people on the left bank: 1794 node expansions.
++ Average travel time for people on the left bank: 526 node expansions.
++ Maximum travel time for people on the left bank: 63 node expansions.
 
 ## Uniform Cost Search ##
 
 If we choose to forgo the heuristic altogether, replacing it with "return 0", we get a uniform cost search, which gives us:
-	* Uniform Cost Search: 7367 node expansions.
++ Uniform Cost Search: 7367 node expansions.
 
 ## Greedy Best First Search ##
 
 Moving on to Greedy Best First search, which is the same as A\* search, except it only considers the heuristic value instead of running cost + heuristic. Using the best heuristic from A\* search, we get:
-	* Final running cost = 20. Succeeded after 9 node expansions.
++ Final running cost = 20. Succeeded after 9 node expansions.
 This shows that Greedy Best First search is not optimal, but it is very quick.
 
 ## Hill Climbing Search ##
 
 A solution using Hill Climbing search, which does not "look ahead" but only considers the successors of the current state, with the best heuristic, gives us:
-	* Final running cost = 24. Succeeded after 6 node expansions.
++ Final running cost = 24. Succeeded after 6 node expansions.
 This is obviously the worst performance, so we can conclude that although Hill Climbing search is the quickest algorithm, it is nearly useless for solving problems of this type.
